@@ -3,5 +3,7 @@ from rollyourown.seo.models import setup
 
 
 class SeoConfig(AppConfig):
+    name = 'rollyourown.seo'
+
     def ready(self):
         setup()
