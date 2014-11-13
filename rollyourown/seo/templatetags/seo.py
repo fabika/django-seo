@@ -60,7 +60,7 @@ class MetadataNode(template.Node):
 
         # If a variable name is given, store the result there
         if self.variable_name is not None:
-            context[self.variable_name] = metadata
+            context.dicts[0][self.variable_name] = metadata
             return ""
         else:
             return unicode(metadata)
